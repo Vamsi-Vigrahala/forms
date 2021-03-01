@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<metacharset="utf-8"/>
+<title></title>
+<style>
+table{
+font-family:monospace;
+font-weight:bold;
+}
+h1{
+color:#0000FF;
+text-align:center;
+font-family:monospace;
+}
+body{
+background-color:#00CED1;
+color:#0C1584;
+}
+</style>
+</head>
+<body>
+<h1>BOOKASHOW -TICKETBOOKING</h1>
+<form id="form1" target="_blank" method="GET" onsubmit="alert('BookingSuccessful')"
+autocomplete="on">
+<tablewidth="100%">
+<tr>
+<td>
+<label>Name</label>
+</td>
+<td>
+<input type="text"name="name"pattern="[a-zA-Z]+"placeholder="EntertheName"
+required>
+</td>
+</tr>
+<tr>
+<td>
+<label>MovieName</label>
+</td>
+<td>
+<input list="movies"placeholder="MovieName"name="moviename"
+autocomplete="on"required>
+<datalist id="movies"name="moviename">
+<option value="Irada">
+<option value="Rangoon">
+<option value="Logan">
+<option value="FistFight">
+</datalist>
+</td>
+</tr>
+<tr>
+<td>
+<label>Circle</label>
+</td>
+<td>
+<input list="circles"name="circle"autocomplete="on"required>
+<datalist id="circles">
+<option value="Silver">
+<option value="Gold">
+<option value="Platinum">
+</datalist>
+</td>
+</tr>
+<tr>
+<td>
+<label>Phoneno</label>
+</td>
+<td>
+<input type="tel"name="phone"placeholder="EnterMobileNumber"pattern="[0-
+9]{10}"required>
+</td>
+</tr>
+<tr>
+<td>
+<label name="showdate">Showdateandtime</label>
+</td>
+<td>
+<input type="datetime-local"name="showdate"required>
+</td>
+</tr>
+<tr>
+<td>
+<label name="tickets">NoofAdults</label>
+</td>
+<td>
+<input type="number"name="tickets"min="1"max="10"required>
+</td>
+</tr>
+<tr>
+<td>
+<label name="children">Noofchildrens</label>
+</td>
+<td>
+<input type="number"name="children"min="1"max="5"required>
+</td>
+</tr>
+<tr>
+<td>
+<input type="submit"name="submit"value="BookMyShow">
+</td>
+<td>
+<input type="reset"name="reset"value="Reset">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
